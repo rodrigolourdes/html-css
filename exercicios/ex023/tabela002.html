@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Tabelas grandes</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -13,6 +13,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+         font-size: 1.5em;
+         font-weight: bold;
+         padding: 10px;
+         background-color: lightgray;
         }
 
         td, th {
@@ -26,11 +34,29 @@
             color: white;
         }
 
-        .num {
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+
+        }
+
+        td.num {
             text-align: right;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 2.0em;
+            padding-left: 38px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
     </style>
 </head>
@@ -39,6 +65,8 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION Legendas / TH - Títulos - TD - dados
+
             THEAD
                 TR, TD, TH
             TBODY
@@ -47,10 +75,13 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>
+            Polpulação das unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -165,10 +196,29 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212.600.000</strong></td>
             </tr>
         </tfoot>
     </table>
+    <br><br><br><br>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe.
+    </p><br>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe.
+    </p><br>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe.
+    </p><br>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe.
+    </p><br>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe.
+    </p><br>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, obcaecati quibusdam? Optio sed dolore fugiat. Pariatur quasi provident sed nulla officiis vero, reprehenderit explicabo ad odio expedita laboriosam voluptatum saepe.
+    </p><br>
 </body>
 </html>
