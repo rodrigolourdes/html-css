@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            border: 2px solid black;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda adipisci itaque necessitatibus voluptas, totam eius facere, incidunt reprehenderit unde id suscipit earum sed quidem atque accusantium nisi hic. Est, maiores.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html"     target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, magni, officiis aperiam ipsam laboriosam repellendus ut doloribus ab perspiciatis tenetur voluptates doloremque alias! Quae optio quam eos vero, laborum voluptatum?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, magni, officiis aperiam ipsam laboriosam repellendus ut doloribus ab perspiciatis tenetur voluptates doloremque alias! Quae optio quam eos vero, laborum voluptatum</p><img src='imagens/PERFIL-99frella.png'>">
+        <p>Infelismente o seu navegador não é compatível com iframes</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus perspiciatis ex vel autem architecto praesentium odio commodi velit debitis perferendis, dolorum nulla veniam a nam dolor molestias maxime sint odit?</p>
+</body>
+</html>
